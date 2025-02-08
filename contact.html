@@ -6,14 +6,14 @@
     <!-- fill in metas below -->
     <meta name="keywords" content="">
     <meta neame="description" content="">
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/styles_contact.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
     <!-- icon below -->
     <link rel="icon" href="">   
-      <!-- title  -->
+    <!-- title  -->
     <title>Creative studio 2e contact page</title>
 </head>
 <body>
@@ -76,61 +76,34 @@
     </header>
 
     <main>
-        <section id="section_contact_header">
-            <h2>REACH OUT</h2>
-            <h2><span id="contact_span_1">.WITH AN IDEA.</span></h2>
-            <H2><span id="contact_span_2">.FOR A CONSULTATION.</span></H2>
-            <H2><span id="contact_span_3">.TO BOOK US.</span></H2>
-        </section>
-        <section id="section_contact_body">
-            <div id="section_contact_body_div_form">
-                <div>
-                    <label for="name">Name *</label>
-                    <input type="text" id="name*" Name="name" placeholder="your name" autofocus required pattern="[A-Za-z]">
-                    
-                    <label for="email">Email *</label>
-                    
-                    <input type="email" id="email" name="email" placeholder="email" autofocus required>
-                </div>
-                <div>
-                    <label for="service" required autofocus>Service *</label> 
-                    
-                        <select name="service" id="service">
-                            <option disabled hidden selected>Select service</option>
-                            <option value="1">Photography</option>
-                            <option value="2">Graphic Design</option>
-                            <option value="3">Web Design</option>
-                            <option value="4">Copy-writing</option>
-                            <option value="5">Other</option>
-                        </select>
-                </div>
-            </div>
-            <div>
-                <div id="div_contact_form_2">
-                    <label for="subject">Subject *</label>
-                    
-                    <input type="text" id="subject" name="subject" placeholder="subject" required autofocus>
-                    
-                    <label for="mail_text">Message</label>
-                        
-                    <textarea id="mail_text" name="mail_text" rows="10" cols="30" required autofocus placeholder="Write your message here"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-                </div>
-            </div>
+       <section>
+        <div id="contact_title">
+            <h1>Contact</h1>
+        </div>
+        <div id="contact_body_1">
+            <h2>What to expect?</h2>
+            <p class="contact_h3" id="contact_body_1_step_1">Step 1: Free consultation</p>
+            <p class="contact_p">We first have a free consultation to get to understand your needs 
+                and requirements. In this step we can give a rough estimate of the 
+                costs of the project as well.</p>
+            <p class="contact_h3" id="contact_body_1_step_2">Step 2: Agreeing on scope</p>
+            <p class="contact_p">Once we have settled on the project we define the scope with you
+                as well factoring in any management needs you may have.</p>
+            <p class="contact_h3" id="contact_body_1_step_3">Step 3: Working process and updates</p>
+            <p class="contact_p">We get to work, keeping you updated on the progress. </p>
 
-            <div id="section_contact_body_div_text">
-                <h3>Or, if you don't like online forms...</h3>
-                <p>Phone: +385 (0) 99 8124 850</p>
-                <p>Mail: studio@2e.eu</p>
+        </div>
+        <div id="contact_body_2">
+            <h2>How to contact us?</h2>
+            <p class="contact_p">Feel free to contact us in ay way over the phone or through our email.</p>
+            <div id="contact_details">
+                <p>Phone:</p>
+                <p><a href="tel:+385998124850">+385 (0) 99 8124 850</a></p>
+                <p>Email:</p>
+                <p><a href="mailto:studio@studio2e.hr">studio@studo2e.hr</a></p>
             </div>
-
-            <div id="section_contact_body_div_image">
-                <img src="Assets/photos/12.jpg" alt="">
-            </div>
-        </section>
+        </div>
+       </section>
     </main>
 
 
@@ -200,6 +173,13 @@
                 </span>
             </div>
             <div id="footer_ul_2_div_2">
+                <!-- <li>
+                    <span>
+                        <a href="">
+                            <p>What to expect?</p>
+                        </a>
+                    </span>
+                </li> -->
                 <LI>
                     <span id="footer_ul_2_div_2_span_1">
                         <a id="footer_a_8" href="tel:+385998124850">
