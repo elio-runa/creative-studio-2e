@@ -13,25 +13,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <!-- title -->
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="desktop_nav">
             <ul type="none">
-                <div id="nav_div_flex_1">
-                    <li id="nav_li_ball_1">
+                <div id="nav_div_flex_0">
+                    <li id="nav_li_ball_0">
                         <svg>
                             <circle cx="12" cy="11.5" r="11.5" fill="#D38A51" ></circle>
                         </svg>
                     </li>
-                    <li id="nav_li_services">
-                        <P><a id="services_nav_a" href="Services.html">SERVICES</a></P>
+                    <li id="nav_li_home">
+                        <a id="home_nav_a" href="index.html">
+                            <span id="home_nav_span">
+                                HOME
+                            </span>
+                        </a>
                     </li>
                     <li>
                         <svg>
                             <circle cx="12" cy="11.5" r="11.5" fill="#CB5555"></circle>
+                        </svg>
+                    </li>
+                </div>
+
+                <div id="nav_div_flex_1">
+                    <li id="nav_li_ball_1">
+                        <svg>
+                            <circle cx="12" cy="11.5" r="11.5" fill="#CB5555" ></circle>
+                        </svg>
+                    </li>
+                    <li id="nav_li_services">
+                        <P>
+                            <a id="services_nav_a" href="Services.html">
+                                <span id="services_nav_span">
+                                WORK
+                                </span>
+                            </a>
+                        </P>
+                    </li>
+                    <li >
+                        <svg id="nav_li_ball_2">
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="#3572a4"></circle>
                         </svg>
                     </li>
                 </div>
@@ -39,15 +71,20 @@
                 <div id="nav_div_flex_2">
                     <li>
                         <svg>
-                            <circle cx="12" cy="11.5" r="11.5" fill="#CB5555"></circle>
+                            <circle cx="12" cy="11.5" r="11.5" fill="#3572a4"></circle>
                         </svg>
                     </li>
                     <li>
-                        <p id="about_nav_p"><a id="about_nav_a" href="about.html">ABOUT</a></p>
+                        <p id="about_nav_p"><a id="about_nav_a" href="about.html">
+                            <span id="about_nav_span">
+                                ABOUT
+                            </span>
+                        </a>
+                    </p>
                     </li>
                     <li>
                         <svg>
-                            <circle cx="12" cy="11.5" r="11.5" fill="#3572a4"></circle>
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="#597D4C"></circle>
                         </svg>
                     </li>
                 </div>
@@ -55,31 +92,94 @@
                 <div id="nav_div_flex_3">
                     <li>
                         <svg>
-                            <circle cx="12" cy="11.5" r="11.5" fill="#3572a4"></circle>
+                            <circle cx="12" cy="11.5" r="11.5" fill="#597D4C"></circle>
                         </svg>
                     </li>
                     <li>
-                        <p id="contact_nav_p"><a id="contact_nav_a" href="contact.html">CONTACT</a></p>
+                        <p id="contact_nav_p">
+                            <a id="contact_nav_a" href="contact.html">
+                                <span id="contact_nav_span">
+                                    CONTACT
+                                </span>
+                            </a>
+                        </p>
                     </li>
                     <li>
                         <svg>
-                            <circle cx="12" cy="11.5" r="11.5" fill="#597D4C"></circle>
+                            <circle cx="11.5" cy="11.5" r="11.5" fill="#6051C2"></circle>
                         </svg>
                     </li>
                 </div>
 
                 <li id="nav_logo">
-                    <a href="index.html"><img src="Assets/Logos/Mode1.png" alt="Creative Studio 2e"></a>
+                    <a href="index.html"><img src="Assets/Logos/mode1white.png" alt="Creative Studio 2e"></a>
                 </li>
             </ul>
+        </nav>
+        <nav id="mobile_nav">
+            <details id="button">
+                <summary>
+                    <svg id="svg_mobile_large">
+                        <circle cx="25" cy="25" r="11.5" fill="#D38A51"></circle>
+                        <line x1="12" y1="18" x2="38" y2="18" stroke="white" stroke-width="2px"></line>
+                        <line x1="12" y1="25" x2="38" y2="25" stroke="white" stroke-width="2px"></line>
+                        <line x1="12" y1="32" x2="38" y2="32" stroke="white" stroke-width="2px"></line>
+                    </svg>
+                    <svg id="svg_mobile_small">
+                        <circle cx="15" cy="15" r="10" fill="#D38A51"></circle>
+                        <line x1="3" y1="10" x2="27" y2="10" stroke="white" stroke-width="2px"></line>
+                        <line x1="3" y1="15" x2="27" y2="15" stroke="white" stroke-width="2px"></line>
+                        <line x1="3" y1="20" x2="27" y2="20" stroke="white" stroke-width="2px"></line>
+                    </svg>
+                </summary>
+                <div id="dropdown_content">
+                    <svg>
+                        <circle cx="12" cy="12" r="7" fill="#D38A51"></circle>
+                    </svg>
+                    <a href="/index.html"><p id="mobile_nav_p_1">Home</p></a>
+                    <svg>
+                        <circle cx="12" cy="12" r="7" fill="#CB5555"></circle>
+                    </svg>
+                    <a href="/Services.html"><p id="mobile_nav_p_2">Work</p></a>
+                    <svg>
+                        <circle cx="12" cy="12" r="7" fill="#3572A4"></circle>
+                    </svg>
+                    <a href="/about.html"><p id="mobile_nav_p_3">About</p></a>
+                    <svg>
+                        <circle cx="12" cy="12" r="7" fill="#597D4C"></circle>
+                    </svg>
+                    <a href="/contact.html"><p id="mobile_nav_p_4">Contact</p></a>
+                </div>
+                <div id="dropdown_content_small">
+                    <svg>
+                        <circle cx="12" cy="8" r="7" fill="#D38A51"></circle>
+                    </svg>
+                    <a href="/index.html"><p id="mobile_nav_p_1">Home</p></a>
+                    <svg>
+                        <circle cx="12" cy="8" r="7" fill="#CB5555"></circle>
+                    </svg>
+                    <a href="/Services.html"><p id="mobile_nav_p_2">Work</p></a>
+                    <svg>
+                        <circle cx="12" cy="8" r="7" fill="#3572A4"></circle>
+                    </svg>
+                    <a href="/about.html"><p id="mobile_nav_p_3">About</p></a>
+                    <svg>
+                        <circle cx="12" cy="8" r="7" fill="#597D4C"></circle>
+                    </svg>
+                    <a href="/contact.html"><p id="mobile_nav_p_4">Contact</p></a>
+                </div>
+            </details>
+            <a href="/index.html" id="logo_small_mobile_nav">
+                <img id="mobile_logo_3" src="/Assets/Logos/Mode3.png" alt="">
+            </a>
         </nav>
     </header>
     <main>
         <section id="services_section_1">
             <article>
                 <img src="Assets/photos/9.jpg" alt="">
-                <h2>PHOTOGRAPHY</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam repellendus aspernatur, itaque dolorum nihil fugit facere nobis molestias consequuntur reprehenderit at, labore eos commodi accusantium doloremque qui! Dolores facilis laborum obcaecati ab itaque harum dignissimos culpa expedita minima neque!
+                <h2>PHOTO-<wbr>GRAPHY</h2>
+                <p>With experince photographing events, products and portraits, you can rest assured when chooding us for your next big thing. We conside photography to be more than just a photographer holding a camera, its the attitude of the photographer, its the moment they capture, and this can be seen in the photos we take.
                 </p> 
             </article> 
             <article>
@@ -205,7 +305,7 @@
                     <span id="footer_ul_2_div_2_span_2">
                         <div>
                             <a id="footer_a_9" href="mailto:studio@2e.eu">
-                                <p>studio@2e.eu</p>
+                                <p>info@studio2e.eu</p>
                             </a>
                         </div>
                     </span>
